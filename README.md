@@ -9,15 +9,15 @@ Before we start, ensure you have the following:
 1. **🦀 Rust**: Install Rust and set up your environment.
    - Install Rust: [Rust Installation Guide](https://www.rust-lang.org/tools/install)
    - Add the wasm32-unknown-unknown target:
-     \`\`\`bash
+     ```bash
      rustup target add wasm32-unknown-unknown
-     \`\`\`
+     ```
 
 2. **💻 Visual Studio Code (VS Code)**: Set up VS Code for Rust and Ink! development.
    - Download and install VS Code from the [official website](https://code.visualstudio.com/).
    - Install the following extensions in VS Code:
      - **Rust Extension**:
-       - Go to the Extensions view (\`Ctrl+Shift+X\`).
+       - Go to the Extensions view (`Ctrl+Shift+X`).
        - Search for "Rust" and install the [Rust extension by rust-lang](https://marketplace.visualstudio.com/items?itemName=rust-lang.rust).
      - **Ink! Extension**:
        - In the Extensions view, search for "Ink!" and install the [Ink! extension](https://marketplace.visualstudio.com/items?itemName=ParityTechnologies.ink-vscode).
@@ -33,76 +33,76 @@ Before we start, ensure you have the following:
    - **Option 1: Native Windows Installation**
      - Download and install Rust using the installer provided at the [official Rust website](https://www.rust-lang.org/tools/install).
      - Open Command Prompt (cmd) or PowerShell and run:
-       \`\`\`bash
+       ```bash
        rustup target add wasm32-unknown-unknown
-       \`\`\`
+       ```
 
    - **Option 2: Using WSL2 (Recommended)**
      - Install WSL2 if you haven't already by following the [WSL installation guide](https://docs.microsoft.com/en-us/windows/wsl/install).
      - Install a Linux distribution from the Microsoft Store (e.g., Ubuntu).
      - Open your WSL2 terminal (e.g., Ubuntu) and install Rust:
-       \`\`\`bash
+       ```bash
        curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
-       \`\`\`
+       ```
      - After installation, add the wasm32 target:
-       \`\`\`bash
+       ```bash
        rustup target add wasm32-unknown-unknown
-       \`\`\`
+       ```
 
 2. **Install Ink! CLI**:
    - **Option 1: Native Windows Installation**
      - Open Command Prompt or PowerShell and run:
-       \`\`\`bash
+       ```bash
        cargo install --force --locked cargo-contract
-       \`\`\`
+       ```
 
    - **Option 2: Using WSL2**
      - In your WSL2 terminal, run:
-       \`\`\`bash
+       ```bash
        cargo install --force --locked cargo-contract
-       \`\`\`
+       ```
 
 3. **Install Node.js and NPM**:
    - **Option 1: Native Windows Installation**
      - Download the Windows installer from the [Node.js website](https://nodejs.org/) and run it.
      - Confirm installation by running in Command Prompt:
-       \`\`\`bash
+       ```bash
        node -v
        npm -v
-       \`\`\`
+       ```
 
    - **Option 2: Using WSL2**
      - In your WSL2 terminal, install Node.js using the package manager:
-       \`\`\`bash
+       ```bash
        sudo apt update
        sudo apt install nodejs npm
-       \`\`\`
+       ```
      - Confirm installation by running:
-       \`\`\`bash
+       ```bash
        node -v
        npm -v
-       \`\`\`
+       ```
 
 4. **Install Inkathon and OpenBrush**:
    - **Option 1: Native Windows Installation**
      - In Command Prompt, run:
-       \`\`\`bash
+       ```bash
        npm install --save inkathon
-       \`\`\`
+       ```
      - For OpenBrush, run:
-       \`\`\`bash
+       ```bash
        cargo install cargo-contract
-       \`\`\`
+       ```
 
    - **Option 2: Using WSL2**
      - In your WSL2 terminal, run:
-       \`\`\`bash
+       ```bash
        npm install --save inkathon
-       \`\`\`
+       ```
      - For OpenBrush, run:
-       \`\`\`bash
+       ```bash
        cargo install cargo-contract
-       \`\`\`
+       ```
 
 **Note:** Using WSL2 is recommended because it offers a more consistent development environment similar to Linux. This is particularly useful for developers working with tools that are often Linux-first, like Rust and Substrate. WSL2 also supports better file system performance and compatibility with various development tools compared to the native Windows environment.
 
@@ -110,111 +110,111 @@ Before we start, ensure you have the following:
 
 1. **Install Rust**:
    - Use the Terminal and run:
-     \`\`\`bash
+     ```bash
      curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
-     \`\`\`
+     ```
    - After installation, add the wasm32 target:
-     \`\`\`bash
+     ```bash
      rustup target add wasm32-unknown-unknown
-     \`\`\`
+     ```
 
 2. **Install Ink! CLI**:
    - Run in Terminal:
-     \`\`\`bash
+     ```bash
      cargo install --force --locked cargo-contract
-     \`\`\`
+     ```
 
 3. **Install Node.js and NPM**:
    - Install Node.js via [Homebrew](https://brew.sh/) by running:
-     \`\`\`bash
+     ```bash
      brew install node
-     \`\`\`
+     ```
    - Confirm installation by running:
-     \`\`\`bash
+     ```bash
      node -v
      npm -v
-     \`\`\`
+     ```
 
 4. **Install Inkathon and OpenBrush**:
    - In Terminal, run:
-     \`\`\`bash
+     ```bash
      npm install --save inkathon
-     \`\`\`
+     ```
    - For OpenBrush, run:
-     \`\`\`bash
+     ```bash
      cargo install cargo-contract
-     \`\`\`
+     ```
 
 #### 🐧 Linux (Ubuntu/Debian)
 
 1. **Install Rust**:
    - Open the terminal and run:
-     \`\`\`bash
+     ```bash
      curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
-     \`\`\`
+     ```
    - After installation, add the wasm32 target:
-     \`\`\`bash
+     ```bash
      rustup target add wasm32-unknown-unknown
-     \`\`\`
+     ```
 
 2. **Install Ink! CLI**:
    - Run in Terminal:
-     \`\`\`bash
+     ```bash
      cargo install --force --locked cargo-contract
-     \`\`\`
+     ```
 
 3. **Install Node.js and NPM**:
    - Install via package manager:
-     \`\`\`bash
+     ```bash
      sudo apt update
      sudo apt install nodejs npm
-     \`\`\`
+     ```
    - Confirm installation by running:
-     \`\`\`bash
+     ```bash
      node -v
      npm -v
-     \`\`\`
+     ```
 
 4. **Install Inkathon and OpenBrush**:
    - In Terminal, run:
-     \`\`\`bash
+     ```bash
      npm install --save inkathon
-     \`\`\`
+     ```
    - For OpenBrush, run:
-     \`\`\`bash
+     ```bash
      cargo install cargo-contract
-     \`\`\`
+     ```
 
 ## 🚀 Step 1: Set Up a New Ink! Project
 
 Create a new Ink! project for your NFT card game contract.
 
-\`\`\`bash
+```bash
 cargo contract new nft_card_game
 cd nft_card_game
-\`\`\`
+```
 
 This will create a basic Ink! project structure.
 
 ## 🛠️ Step 2: Add OpenBrush Dependency
 
-Open the \`Cargo.toml\` file in your project and add OpenBrush as a dependency.
+Open the `Cargo.toml` file in your project and add OpenBrush as a dependency.
 
-\`\`\`toml
+```toml
 [dependencies]
 ink = { version = "5.0.0", default-features = false }
 openbrush = { tag = "4.0.0", git = "https://github.com/Brushfam/openbrush-contracts", default-features = false, features = [
     "psp34",
 ] }
-\`\`\`
+```
 
 ## 🧑‍💻 Step 3: Implement NFT Card Game Logic
 
 ### ⚙️ Card Struct and NFT Implementation:
 
-Create a new file \`lib.rs\` under the \`src\` directory and paste the following code:
+Create a new file `lib.rs` under the `src` directory and paste the following code:
 
-\`\`\`rust
+```rust
 use ink_lang as ink;
 use openbrush::contracts::psp34::*;
 use openbrush::traits::Storage;
@@ -257,7 +257,7 @@ mod nft_card_game {
         }
     }
 }
-\`\`\`
+```
 
 This code sets up the basic structure for minting and transferring NFT cards, as well as a placeholder for the game logic.
 
@@ -265,11 +265,11 @@ This code sets up the basic structure for minting and transferring NFT cards, as
 
 Compile your contract using the following command:
 
-\`\`\`bash
+```bash
 cargo +nightly contract build
-\`\`\`
+```
 
-This will generate a \`.wasm\` file that you can deploy on a Substrate-based chain.
+This will generate a `.wasm` file that you can deploy on a Substrate-based chain.
 
 ## 🌐 Step 5: Deploy and Interact using Inkathon
 
@@ -277,17 +277,17 @@ Inkathon provides tools to interact with your smart contract from a TypeScript e
 
 ### ⚙️ Create a new Inkathon project:
 
-\`\`\`bash
+```bash
 npx create-inkathon-app my_inkathon_app
 cd my_inkathon_app
 npm install
-\`\`\`
+```
 
 ### 🚀 Deploy the Contract:
 
 Use the Inkathon framework to deploy your contract:
 
-\`\`\`typescript
+```typescript
 import { deployContract } from '@scio-labs/inkathon';
 
 async function deployNftCardGameContract() {
@@ -301,15 +301,15 @@ async function deployNftCardGameContract() {
 }
 
 deployNftCardGameContract();
-\`\`\`
+```
 
-Replace \`<your_contract_code_hash>\`, \`<constructor>\`, \`<gas_limit>\`, and \`<value>\` with the appropriate values from your contract.
+Replace `<your_contract_code_hash>`, `<constructor>`, `<gas_limit>`, and `<value>` with the appropriate values from your contract.
 
 ### 💬 Interact with the Contract:
 
 Use Inkathon's functions to call your contract methods, such as minting cards, transferring cards, and initiating gameplay.
 
-\`\`\`typescript
+```typescript
 import { callContractMethod } from '@scio-labs/inkathon';
 
 async function mintNftCard(contractAddress: string, to: string, id: string) {
@@ -324,7 +324,7 @@ async function mintNftCard(contractAddress: string, to: string, id: string) {
 }
 
 mintNftCard('<contract_address>', '<recipient_address>', '1');
-\`\`\`
+```
 
 ## 🎉 Conclusion
 
